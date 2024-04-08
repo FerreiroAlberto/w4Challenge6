@@ -12,5 +12,6 @@ export class RepoService {
 
   getPets(): Observable<Pets[]> {
     return this.http.get<Pets[]>(this.urlBase);
+    console.log('pasa por el repo');
   }
 }

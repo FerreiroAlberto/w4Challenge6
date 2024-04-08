@@ -7,11 +7,15 @@ import { Pets } from '../../../model';
 })
 export class StoreService {
   private pets = signal<Pets[]>([]);
-  constructor(private repo: RepoService) {}
+  constructor(private repo: RepoService) {
+    this.loadPets();
+  }
   loadPets() {
     this.repo.getPets().subscribe({
       next: (data) => {
         this.pets.set(data);
+        console.log('pasa por el store');
+        console.log(this.pets());
       },
       error: (error) => {
         console.log(error.message);
