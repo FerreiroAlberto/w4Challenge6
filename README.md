@@ -1,27 +1,41 @@
-# PetList
+# Pet List by Signals
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+- Cada mascota es un objeto con
 
-## Development server
+  - id (auto-generado por JSON-Server): string
+  - name
+  - raza/especie
+  - isAdopted
+  - padre/madre adoptivo = dueño: string
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Existe una lista inicial en un json-server
 
-## Code scaffolding
+- Se listan las mascotas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-------- Create - Read - Update - Delete
 
-## Build
+- Se puede añadir mascotas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Se borran mascotas
 
-## Running unit tests
+- Se puede adoptar una mascotas |-> opcional
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+----- Componentes
 
-## Running end-to-end tests
+--- Header
+--- Footer
+--- Lista
+--- Item (Mascota)
+--- Añadir
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Opcional
 
-## Further help
+Añade una página Home, junto con la página de Lista y permite navegar entre ellas mediante un menú
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## LO MAS IMPORTANTE y CRÍTICO
+
+- Servicio Repository conectando con el json-server - httpClient
+- Servicio de Store/State mascotas - Signals
+- Componente Lista mascotas - Signals
+
+- Testamos todos

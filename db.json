@@ -1,0 +1,28 @@
+{
+  "pets": [
+    {
+      "name": "Choco",
+      "species": "MinPin",
+      "owner": "Pepe",
+      "isAdopted": false
+    },
+    {
+      "name": "2Pac",
+      "species": "Doberman",
+      "owner": "Lucía",
+      "isAdopted": false
+    },
+    {
+      "name": "Mila",
+      "species": "Golden Retriever",
+      "owner": "Marcos",
+      "isAdopted": false
+    },
+    {
+      "name": "Luka",
+      "species": "Chihuahua",
+      "owner": "Paula",
+      "isAdopted": false
+    }
+  ]
+}
