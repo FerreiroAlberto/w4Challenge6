@@ -15,8 +15,6 @@ export class StoreService {
     this.repo.getPets().subscribe({
       next: (data) => {
         this.pets.set(data);
-        console.log('pasa por el store');
-        console.log(this.pets());
       },
       error: (error) => {
         console.log(error.message);

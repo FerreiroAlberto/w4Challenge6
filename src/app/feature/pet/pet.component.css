@@ -1,0 +1,20 @@
+:host {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+li {
+  padding: 12px;
+  display: block;
+}
+
+img {
+  border-bottom: 1px solid #ddd;
+}
+
+p {
+  margin: 4px 0;
+  color: #333;
+}

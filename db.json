@@ -1,24 +1,28 @@
 {
   "pets": [
     {
-      "name": "2Pach",
+      "id": "f9e494df-7b66-4147-9600-c101dba8e20c",
+      "name": "2Pac",
       "species": "MinPin",
       "owner": "Pepe",
       "isAdopted": false
     },
     {
+      "id": "28b07e52-0ccc-415f-a381-c59f2681e916",
       "name": "Hans",
       "species": "Doberman",
       "owner": "Lucía",
       "isAdopted": false
     },
     {
+      "id": "b9fb7a8b-dc15-4937-8898-f1dce9b54215",
       "name": "Mila",
       "species": "Golden Retriever",
       "owner": "Marcos",
       "isAdopted": false
     },
     {
+      "id": "e5564acb-cac1-48a5-af33-34e48d3f897e",
       "name": "Luka",
       "species": "Chihuahua",
       "owner": "Paula",
