@@ -1,12 +1,12 @@
 import { Injectable, signal } from '@angular/core';
 import { RepoService } from './repo.service';
-import { Pets } from '../../../model';
+import { Pet } from '../../../model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class StoreService {
-  private pets = signal<Pets[]>([]);
+  private pets = signal<Pet[]>([]);
   constructor(private repo: RepoService) {
     this.loadPets();
   }
@@ -23,6 +23,6 @@ export class StoreService {
     });
   }
   sendPets() {
-    return this.pets;
+    return this.pets();
   }
 }

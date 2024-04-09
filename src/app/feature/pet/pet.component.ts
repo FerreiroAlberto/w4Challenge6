@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Pets } from '../../../../model';
+import { Pet } from '../../../../model';
 
 @Component({
   selector: 'app-pet',
@@ -9,5 +9,5 @@ import { Pets } from '../../../../model';
   styleUrl: './pet.component.css',
 })
 export class PetComponent {
-  @Input({ required: true }) pet: Pets = {} as Pets;
+  @Input({ required: true }) pet: Pet = {} as Pet;
 }
