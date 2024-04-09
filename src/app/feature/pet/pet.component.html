@@ -1,16 +1,19 @@
 <li>
   <img
-    [src]="'https://source.unsplash.com/random/?' + pet.species"
-    [alt]="'Image of an ' + pet.species"
-    width="240"
+    [src]="'https://source.unsplash.com/random/?' + pet().species"
+    [alt]="'Image of a' + pet().species"
+    height="240"
   />
 </li>
 <li>
-  <p>Name: {{ pet.name }}</p>
+  <p>Name: {{ pet().name }}</p>
 </li>
 <li>
-  <p>Owner: {{ pet.owner }}</p>
+  <p>Owner: {{ pet().owner }}</p>
 </li>
 <li>
-  <p>Adopted: {{ pet.isAdopted ? "yes" : "no" }}</p>
+  <p>Species: {{ pet().species }}</p>
+</li>
+<li>
+  <p>Adopted: {{ pet().isAdopted ? "yes" : "no" }}</p>
 </li>
