@@ -7,6 +7,7 @@ import { Pet } from '../../../model';
 })
 export class StoreService {
   private pets = signal<Pet[]>([]);
+  public petState = this.pets.asReadonly();
   constructor(private repo: RepoService) {
     this.loadPets();
   }

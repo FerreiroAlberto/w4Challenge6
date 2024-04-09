@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { StoreService } from '../../core/store.service';
-import { Pet } from '../../../../model';
 import { PetComponent } from '../pet/pet.component';
 
 @Component({
@@ -16,10 +15,5 @@ import { PetComponent } from '../pet/pet.component';
   imports: [PetComponent],
 })
 export class ListComponent {
-  pets: Pet[] = [];
   constructor(public store: StoreService) {}
-  // ngOnInit() {
-  //   this.pets = this.store.sendPets();
-  //   console.log(this.pets);
-  // }
 }
