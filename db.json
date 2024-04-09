@@ -1,13 +1,13 @@
 {
   "pets": [
     {
-      "name": "Choco",
+      "name": "2Pach",
       "species": "MinPin",
       "owner": "Pepe",
       "isAdopted": false
     },
     {
-      "name": "2Pac",
+      "name": "Hans",
       "species": "Doberman",
       "owner": "Lucía",
       "isAdopted": false
