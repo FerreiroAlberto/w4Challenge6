@@ -24,4 +24,27 @@ export class StoreService {
   sendPets() {
     return this.pets();
   }
+  deletePet(petId: string) {
+    this.pets.update((pets) => pets.filter((pet) => pet.id !== petId));
+  }
+  adoptPet(petId: string) {
+    this.pets.update((pets) =>
+      pets.map((pet) => {
+        if (pet.id === petId) {
+          pet.isAdopted = true;
+        }
+        return pet;
+      })
+    );
+  }
+  unAdopt(petId: string) {
+    this.pets.update((pets) =>
+      pets.map((pet) => {
+        if (pet.id === petId) {
+          pet.isAdopted = false;
+        }
+        return pet;
+      })
+    );
+  }
 }
