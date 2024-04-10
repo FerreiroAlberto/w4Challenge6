@@ -13,4 +13,17 @@ export class RepoService {
   getPets(): Observable<Pet[]> {
     return this.http.get<Pet[]>(this.urlBase);
   }
+  deletePet(petId: string) {
+    this.http.delete<Pet>(this.urlBase + '/' + petId).subscribe();
+  }
+  adoptPet(petId: string) {
+    this.http
+      .patch<Pet>(this.urlBase + '/' + petId, { isAdopted: true })
+      .subscribe();
+  }
+  unAdopt(petId: string) {
+    this.http
+      .patch<Pet>(this.urlBase + '/' + petId, { isAdopted: false })
+      .subscribe();
+  }
 }
